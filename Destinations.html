@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>目的地指南 - 我的旅行足迹</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        nav { background: #2c3e50; overflow: hidden; }
+        nav a { float: left; color: white; padding: 14px 20px; text-decoration: none; text-align: center; }
+        nav a:hover { background: #ddd; color: black; }
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .destination-card { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px; }
+        .card { flex: 1; min-width: 300px; border: 1px solid #eee; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card h3 { margin-bottom: 10px; color: #2c3e50; }
+        .btn { background: #e74c3c; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 10px; }
+        .btn:hover { background: #c0392b; }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">首页</a>
+        <a href="destinations.html">目的地指南</a>
+        <a href="stories.html">旅行故事</a>
+    </nav>
+
+    <div class="container">
+        <h2>精选旅行目的地</h2>
+        <p>整理热门目的地攻略，包含路线、美食和必玩景点</p>
+
+        <div class="destination-card">
+            <div class="card">
+                <img src="洱海.jpg" alt="目的地1（如大理洱海）">
+                <div class="card-content">
+                    <h3>大理·洱海</h3>
+                    <p>环海骑行、喜洲古镇、双廊民宿，感受风花雪月的浪漫。</p>
+                    <a href="#" class="btn">查看攻略</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="敦煌.jpg" alt="目的地2（如敦煌沙漠）">
+                <div class="card-content">
+                    <h3>敦煌·沙漠</h3>
+                    <p>鸣沙山日落、莫高窟壁画、沙洲夜市，体验大漠孤烟直。</p>
+                    <a href="#" class="btn">查看攻略</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="厦门.jpg" alt="目的地3（如厦门海边）">
+                <div class="card-content">
+                    <h3>厦门·海边</h3>
+                    <p>鼓浪屿漫步、曾厝垵美食、海边日出，邂逅文艺小清新。</p>
+                    <a href="#" class="btn">查看攻略</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 我的旅行网站 | 分享每一段精彩旅程</p>
+    </footer>
+</body>
+</html>
