@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日历</title>
+  <style>
+    body {
+      text-align: center;
+    }
+   .box {
+      margin: 0 auto;
+      width: 880px;
+    }
+   .title {
+      background: #e00909;
+    }
+    table {
+      height: 200px;
+      width: 200px;
+      font-size: 12px;
+      text-align: center;
+      float: left;
+      margin: 10px;
+      font-family: arial;
+    }
+  </style>
+  <script src="calendar.js"></script>
+</head>
+<body>
+  <h1>日历</h1>
+  <div id="calendar-container"></div>
+  <script>
+    // 获取当前年份
+    const currentYear = new Date().getFullYear();
+    // 调用 calendar 函数生成日历 HTML
+    const calendarHtml = calendar(currentYear);
+    // 将生成的日历 HTML 插入到指定容器中
+    document.getElementById('calendar-container').innerHTML = calendarHtml;
+  </script>
+</body>
+</html>

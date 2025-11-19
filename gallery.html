@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国旅游 - 照片画廊</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav id="navbar">
+    <a href="index.html">首页</a>
+    <a href="destinations.html">目的地</a>
+    <a href="culture.html">文化体验</a>
+    <a href="tips.html">旅行贴士</a>
+    <a href="gallery.html">照片画廊</a>
+    <a href="contact.html">联系我们</a>
+  </nav>
+
+  <!-- 页面标题 -->
+  <header class="page-header">
+    <h1>中国风光照片画廊</h1>
+    <p>欣赏中国各地的壮丽景色和文化遗产</p>
+  </header>
+
+  <!-- 主要内容 -->
+  <main class="container">
+    <section class="gallery-section">
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="nature">自然风光</button>
+        <button class="filter-btn" data-filter="culture">文化遗产</button>
+        <button class="filter-btn" data-filter="city">城市风光</button>
+        <button class="filter-btn" data-filter="food">美食</button>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item nature" data-category="nature">
+          <img src="https://picsum.photos/id/1015/600/400" alt="北京长城">
+          <div class="gallery-overlay">
+            <h3>北京长城</h3>
+            <p>雄伟壮观的万里长城</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item culture" data-category="culture">
+          <img src="https://picsum.photos/id/1039/600/400" alt="西安兵马俑">
+          <div class="gallery-overlay">
+            <h3>西安兵马俑</h3>
+            <p>世界闻名的考古奇迹</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item city" data-category="city">
+          <img src="https://picsum.photos/id/1043/600/400" alt="上海外滩">
+          <div class="gallery-overlay">
+            <h3>上海外滩</h3>
+            <p>上海的标志性景点</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item nature" data-category="nature">
+          <img src="https://picsum.photos/id/1036/600/400" alt="桂林山水">
+          <div class="gallery-overlay">
+            <h3>桂林山水</h3>
+            <p>山水甲天下的自然风光</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item food" data-category="food">
+          <img src="https://picsum.photos/id/1080/600/400" alt="中国美食">
+          <div class="gallery-overlay">
+            <h3>中国美食</h3>
+            <p>丰富多彩的中国菜系</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item culture" data-category="culture">
+          <img src="https://picsum.photos/id/1056/600/400" alt="传统艺术">
+          <div class="gallery-overlay">
+            <h3>传统艺术</h3>
+            <p>中国传统戏曲表演</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item city" data-category="city">
+          <img src="https://picsum.photos/id/1050/600/400" alt="成都市区">
+          <div class="gallery-overlay">
+            <h3>成都市区</h3>
+            <p>悠闲舒适的城市生活</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item nature" data-category="nature">
+          <img src="https://picsum.photos/id/1035/600/400" alt="龙脊梯田">
+          <div class="gallery-overlay">
+            <h3>龙脊梯田</h3>
+            <p>壮观的梯田景观</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item food" data-category="food">
+          <img src="https://picsum.photos/id/1081/600/400" alt="四川火锅">
+          <div class="gallery-overlay">
+            <h3>四川火锅</h3>
+            <p>麻辣鲜香的四川特色</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>&copy; 2025 中国旅游网. 保留所有权利.</p>
+    <div class="social-links">
+      <a href="#">微信</a>
+      <a href="#">微博</a>
+      <a href="#">抖音</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>  
